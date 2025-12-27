@@ -25,6 +25,7 @@
       display:flex;
       justify-content:space-between;
       margin-bottom:40px;
+      flex-wrap: wrap;
     }
     .service{
       width:30%;
@@ -32,6 +33,11 @@
       border-radius:10px;
       box-shadow:0 0 10px rgba(0,0,0,0.1);
       text-align:center;
+      transition: transform 0.3s ease , box-shadow 0.3s ease;
+    }
+    .service:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
     .service img{
       width:100%;
@@ -71,7 +77,20 @@
       padding:15px;
       margin-top:30px;
     }
-    
+    @media(max-width: 768px){
+      .service{
+        width: 48%;
+        margin-bottom: 20px;
+      }
+      .services{
+        justify-content: space-around;
+      }
+    }
+    @media(max-width: 480px){
+      .service{
+        width: 100%;
+      }
+    }
     
     #confirmation {
       display: none;
