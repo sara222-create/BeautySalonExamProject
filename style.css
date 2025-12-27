@@ -72,3 +72,46 @@
       margin-top:30px;
     }
     
+    
+    #confirmation {
+      display: none;
+      background-color:  #fce4ec;
+      color: #ad1457;
+      border: 1px solid #f8bbd9;
+      padding: 15px 20px ;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      animation: slideDown 0.6s ease forwards;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      max-width: 90%;
+      width: auto;
+    }
+
+    @keyframes slideDownFade {
+      0%{
+        opacity: 0;
+        transform: translateY(-20px) translateX(-50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);;
+      }
+    }
+
+    #close-alert {
+      color:  #ad1457;
+      font-size: 1.5rem;
+      line-height: 1;
+      float: right;
+      cursor: pointer;
+    }
+    #close-alert:hover {
+      color: #880e4f;
+    }
