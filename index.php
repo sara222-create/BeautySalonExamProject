@@ -116,6 +116,7 @@ footer{
 
   <div class="form-box">
     <h2>Prendre un rendez-vous</h2>
+    <div id="confirmation"></div>
 
     <form action="save.php" method="POST" onsubmit="return validateForm()">
       <input type="text" name="nom" id="nom" placeholder="Nom complet">
