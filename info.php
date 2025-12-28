@@ -25,24 +25,24 @@
 <body>
 
 <div class="container">
-    <h2>✨ معلومات تهمك ✨</h2>
+    <h2>✨ Informations qui vous intéressent ✨</h2>
 
     <div class="faq-section">
         <div class="faq-item">
-            <span class="question">❓ هل يجب الحجز مسبقاً؟</span>
-            <span class="answer">نعم، يفضل الحجز عبر الموقع لضمان توفر الوقت المناسب لكِ.</span>
+            <span class="question">❓ Dois-je réserver à l'avance</span>
+            <span class="answer">Oui, il est préférable de réserver sur le site web pour s'assurer que le bon moment est disponible pour vous.</span>
         </div>
         <div class="faq-item">
-            <span class="question">🕒 ما هي أوقات العمل؟</span>
-            <span class="answer">نحن مفتوحون من السبت إلى الخميس، من الساعة 9:00 صباحاً حتى 7:00 مساءً.</span>
+            <span class="question">🕒 Heures de travail </span>
+            <span class="answer">Nous somme ouverts du samedi au jeudi , de 9:00 du matin à 7:00 du soir.</span>
         </div>
         <div class="faq-item">
-            <span class="question">📍 أين يقع الصالون؟</span>
-            <span class="answer">يقع صالوننا في وسط المدينة، بالقرب من المركز التجاري الكبير.</span>
+            <span class="question">📍 Où se trouve le salon?</span>
+            <span class="answer">Notre salon est situé dans le centre-ville prés du grand centre commercial.</span>
         </div>
     </div>
 
-    <h2>📱 تواصلوا معنا</h2>
+    <h2> Contactez nous 📱</h2>
     <div class="contact-grid">
         <div class="contact-card">
             <h4>Instagram</h4>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <a href="index.php" class="btn-back">← العودة لصفحة الحجز</a>
+    <a href="index.php" class="btn-back">← Retour à la page d'accueil</a>
 </div>
 
 </body>
