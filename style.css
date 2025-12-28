@@ -134,3 +134,24 @@
     #close-alert:hover {
       color: #880e4f;
     }
+
+    .details-container{
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .detail-card{
+      background: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .detail-card h3{
+      color: #e91e63;
+      margin-bottom: 10px;
+    }

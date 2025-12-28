@@ -1,3 +1,7 @@
+<?php
+include "db.php";
+$services = mysqli_query($conn, "SELECT * FROM services");
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -97,21 +101,19 @@ footer{
 
 </header>
 
+
+
+
 <div class="container">
 
   <div class="services">
-    <div class="service">
-      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035">
-      <h3>Coiffure</h3>
-    </div>
-    <div class="service">
-      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
-      <h3>Maquillage</h3>
-    </div>
-    <div class="service">
-      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
-      <h3>Soins</h3>
-    </div>
+    <?php while($service = mysqli_fetch_assoc($services)) { ?>
+      <div class="service"
+           onclick="window.location.href='service.php?id=<?= $service['id'] ?>'">
+        <img src="<?= $service['image'] ?>" alt="<?= $service['name'] ?>">
+        <h3><?= $service['name'] ?></h3>
+      </div>
+    <?php } ?>
   </div>
 
   <div class="form-box">
@@ -120,13 +122,17 @@ footer{
 
     <form action="save.php" method="POST" onsubmit="return validateForm()">
       <input type="text" name="nom" id="nom" placeholder="Nom complet">
-      <input type="text" name="telephone" id="telephone" placeholder="Téléphone" maxlength="10">
+      <input type="text" name="telephone" id="telephone" placeholder="Téléphone" maxlength="10" minlength="10">
 
-      <select name="service">
-        <option>Coiffure</option>
-        <option>Maquillage</option>
-        <option>Soins</option>
-      </select>
+      <select name="service" id="serviceSelect">
+      <?php
+      $services_select = mysqli_query($conn, "SELECT * FROM services");
+      while($s = mysqli_fetch_assoc($services_select)) {
+        echo "<option value='{$s['name']}'>{$s['name']}</option>";
+      }
+      ?>
+    </select>
+
 
       <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>">
        <input type="time" name="heure">
