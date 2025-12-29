@@ -61,7 +61,7 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `name`, `image`) VALUES
 (1, 'Coiffure', 'https://images.unsplash.com/photo-1560066984-138dadb4c035'),
-(2, 'Maquillage', 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e'),
+(2, 'Maquillage', 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796'),
 (3, 'Soins', 'https://images.unsplash.com/photo-1515377905703-c4788e51af15');
 
 -- --------------------------------------------------------

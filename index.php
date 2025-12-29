@@ -9,7 +9,7 @@ $services = mysqli_query($conn, "SELECT * FROM services");
   <meta charset="UTF-8">
   <title>Salon de Beauté</title>
  
-  <script src ="script.js" defer> </script>
+  <script src ="script.js" defer> </script>1
   <link rel="stylesheet" href="style.css">
 
 </head>
