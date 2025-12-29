@@ -76,12 +76,12 @@ CREATE TABLE `service_details` (
 
 
 INSERT INTO `service_details` (`id`, `service_id`, `title`, `price`, `duration`) VALUES
-(1, 1, 'Brushing (Blowout)', 1500.00, 45),
-(2, 1, 'Lissage', 4000.00, 120),
+(1, 1, 'Brushing', 1500.00, 45),
+(2, 1, 'Lissage', 3000.00, 120),
 (3, 1, 'Coiffure mariage', 8000.00, 180),
-(4, 2, 'Maquillage simple', 2000.00, 40),
-(5, 2, 'Maquillage soirée', 3500.00, 60),
-(6, 2, 'Maquillage mariée', 7000.00, 120),
+(4, 2, 'Maquillage simple', 3500.00, 40),
+(5, 2, 'Maquillage soirée', 5000.00, 60),
+(6, 2, 'Maquillage mariée', 9000.00, 120),
 (7, 3, 'Soin visage', 2500.00, 60),
 (8, 3, 'Nettoyage de peau', 3000.00, 75),
 (9, 3, 'Masque hydratant', 1800.00, 30);
