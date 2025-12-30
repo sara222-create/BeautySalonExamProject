@@ -1,17 +1,22 @@
 function validateForm() {
-  let nom = document.getElementById("nom").value;
-  let tel = document.getElementById("telephone").value;
+  let nom = document.getElementById("nom").value.trim();
+  let tel = document.getElementById("telephone").value.trim();
+  let date = document.querySelector('input[name="date"]').value;
+  let heure = document.querySelector('input[name="heure"]').value;
 
-  if (nom == "" || tel == "") {
+  if (nom === "" || tel === "" || date === "" || heure === "") {
     showErrorAlert("Veuillez remplir tous les champs obligatoires.");
     return false;
   }
+
   if (isNaN(tel)) {
     showErrorAlert("Le numéro de téléphone doit contenir uniquement des chiffres.");
     return false;
   }
+
   return true;
 }
+
 
 window.onload = function() {
   const params = new URLSearchParams(window.location.search);
@@ -62,3 +67,6 @@ function showErrorAlert(message) {
     }, 5000);
   }
 }
+
+
+      
