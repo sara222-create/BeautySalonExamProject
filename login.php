@@ -4,7 +4,7 @@ if(isset($_POST['login'])){
     $user = $_POST['user'];
     $pass = $_POST['pass'];
 
-    // يمكنك تغيير اسم المستخدم وكلمة المرور هنا
+    
     if($user == "admin" && $pass == "admin123"){
         $_SESSION['admin'] = "active";
         header("Location: admin.php");
