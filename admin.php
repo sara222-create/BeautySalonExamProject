@@ -19,7 +19,7 @@ $result = mysqli_query($conn, "SELECT * FROM reservations");
 session_start();
 if(!isset($_SESSION['admin'])){ header("Location: login.php"); exit(); }
 
-include "db.php"; // تأكدي أن هذا الملف موجود
+include "db.php"; 
 
 // --- هنا نضع أكواد الحسابات الجديدة ---
 $total_res = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM reservations"))['total'];
