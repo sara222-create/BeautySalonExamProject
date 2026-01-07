@@ -68,7 +68,7 @@ $services = mysqli_query($conn, "SELECT * FROM services");
   © 2025 Salon de Beauté | Projet Web
   <footer>
   © 2025 Salon de Beauté | 
-  <a href="admin.php" style="color: #fff; text-decoration: underline; margin-left: 10px;">دخول الإدارة 🔑</a>
+  <a href="admin.php" style="color: #fff; text-decoration: underline; margin-left: 10px;">Entrée de l'administration🔑</a>
   <a href="info.php" style="color: white; margin-left: 15px;">Infos & Contact</a>
 </footer>
 </footer>
