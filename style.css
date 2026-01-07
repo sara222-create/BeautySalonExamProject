@@ -155,3 +155,11 @@
       color: #e91e63;
       margin-bottom: 10px;
     }
+
+    .breadcrumb{
+      background-color: #f6f6f6;
+      padding: 10px 20px;
+      font-size: 14px;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+    }

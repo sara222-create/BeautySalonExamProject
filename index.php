@@ -15,6 +15,9 @@ $services = mysqli_query($conn, "SELECT * FROM services");
 </head>
 
 <body>
+<nav class="breadcrumb">
+  <span>🏠 Accueil</span>
+</nav>
 
 <header>
   
@@ -43,17 +46,31 @@ $services = mysqli_query($conn, "SELECT * FROM services");
 
     <form action="save.php" method="POST" onsubmit="return validateForm()">
       <input type="text" name="nom" id="nom" placeholder="Nom complet">
-      <input type="text" name="telephone" id="telephone" placeholder="Téléphone" maxlength="10" minlength="10">
+<input type="text" name="telephone" id="telephone" placeholder="Téléphone" maxlength="10" minlength="10">
 
-      <select name="service" id="serviceSelect">
-      <?php
-      $services_select = mysqli_query($conn, "SELECT * FROM services");
-      while($s = mysqli_fetch_assoc($services_select)) {
-        echo "<option value='{$s['name']}'>{$s['name']}</option>";
-      }
-      ?>
-    </select>
 
+     <select name="service" required>
+  <option value="">-- Choisir un service --</option>
+
+  <optgroup label="Coiffure">
+    <option value="Brushing">Brushing</option>
+    <option value="Lissage">Lissage</option>
+    <option value="Coiffure mariage">Coiffure mariage</option>
+  </optgroup>
+
+  <optgroup label="Soins">
+    <option value="Soin visage">Soin visage</option>
+    <option value="Masque hydratant">Masque hydratant</option>
+    <option value="Nettoyage de peau">Nettoyage de peau</option>
+
+  </optgroup>
+
+  <optgroup label="Maquillage">
+    <option value="Maquillage simple">Maquillage simple</option>
+    <option value="Maquillage soirée">Maquillage soirée</option>
+    <option value="Maquillage mariée">Maquillage mariée</option>
+  </optgroup>
+</select>
 
       <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>">
        <input type="time" name="heure">
