@@ -83,7 +83,7 @@ while($row = mysqli_fetch_assoc($chart_query)) {
    <a href="logout.php" style="color: red;">تسجيل الخروج 🚪</a>
 </div>
 
-<h2>📋 إدارة المواعيد والإحصائيات</h2>
+<h2>📋 Gestion des statistiques et des rendez-vous</h2>
 
 <style>
   .stats-container { display: flex; justify-content: space-around; gap: 20px; margin: 20px auto; width: 95%; }
@@ -94,15 +94,15 @@ while($row = mysqli_fetch_assoc($chart_query)) {
 
 <div class="stats-container">
   <div class="stat-card">
-    <h3>إجمالي الحجوزات</h3>
+    <h3>Total des réservations</h3>
     <p><?php echo $total_res; ?></p>
   </div>
   <div class="stat-card" style="border-top-color: #4caf50;">
-    <h3>حجوزات اليوم</h3>
+    <h3>Réservations d'aujourd'hui</h3>
     <p><?php echo $today_res; ?></p>
   </div>
   <div class="stat-card" style="border-top-color: #2196f3;">
-    <h3>الأكثر طلباً</h3>
+    <h3>Le plus demandé</h3>
     <p style="font-size: 1.2rem;"><?php echo $popular_service['service'] ?? 'لا يوجد'; ?></p>
   </div>
 </div>
