@@ -3,17 +3,18 @@ function validateForm() {
   let tel = document.getElementById("telephone").value.trim();
   let date = document.querySelector('input[name="date"]').value;
   let heure = document.querySelector('input[name="heure"]').value;
-
+ 
   if (nom === "" || tel === "" || date === "" || heure === "") {
     showErrorAlert("Veuillez remplir tous les champs obligatoires.");
     return false;
   }
 
   if (isNaN(tel)) {
-    showErrorAlert("Le numéro de téléphone doit contenir uniquement des chiffres.");
-    return false;
-  }
+  showErrorAlert("Le numéro de téléphone doit contenir uniquement des chiffres.");
+  return false;
+}
 
+  
   return true;
 }
 

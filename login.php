@@ -18,7 +18,7 @@ if(isset($_POST['login'])){
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تسجيل دخول الإدارة</title>
+    <title>connexion</title>
     <style>
         body { font-family: Arial; background: #fce4ec; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .login-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
@@ -28,12 +28,12 @@ if(isset($_POST['login'])){
 </head>
 <body>
     <div class="login-box">
-        <h2>دخول الإدارة 🔒</h2>
+        <h2>Entrée de l'administration</h2>
         <?php if(isset($error)) echo "<p style='color:red'>$error</p>"; ?>
         <form method="POST">
             <input type="text" name="user" placeholder="nom de l'utilisateur" required>
             <input type="password" name="pass" placeholder="mot de passe" required>
-            <button type="submit" name="login">دخول</button>
+            <button type="submit" name="login">connexion</button>
         </form>
     </div>
 </body>
