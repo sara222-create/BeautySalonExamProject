@@ -15,9 +15,7 @@ $services = mysqli_query($conn, "SELECT * FROM services");
 </head>
 
 <body>
-<nav class="breadcrumb">
-  <span>Accueil</span>
-</nav>
+  
 
 <header>
   
