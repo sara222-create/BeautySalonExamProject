@@ -33,7 +33,7 @@ if(isset($_POST['login'])){
         <form method="POST">
             <input type="text" name="user" placeholder="nom de l'utilisateur" required>
             <input type="password" name="pass" placeholder="mot de passe" required>
-            <button type="submit" name="login">دخول</button>
+            <button type="submit" name="login">connexion</button>
         </form>
     </div>
 </body>
