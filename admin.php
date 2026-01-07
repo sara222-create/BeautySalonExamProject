@@ -79,8 +79,8 @@ while($row = mysqli_fetch_assoc($chart_query)) {
 <h2>📋 Liste des rendez-vous</h2>
 
 <div style="width: 90%; margin: 10px auto;">
-   <a href="index.php" style="text-decoration: none; color: #e91e63; font-weight: bold;">← العودة لصفحة الحجز</a>
-   <a href="logout.php" style="color: red;">تسجيل الخروج 🚪</a>
+   <a href="index.php" style="text-decoration: none; color: #e91e63; font-weight: bold;">← Accueil</a>
+   <a href="logout.php" style="color: red;">Deconnexion</a>
 </div>
 
 <h2>📋 Gestion des statistiques et des rendez-vous</h2>
@@ -143,12 +143,6 @@ const myChart = new Chart(ctx, {
         datasets: [{
             label: 'عدد الحجوزات',
             data: <?php echo json_encode($counts); ?>,
-            backgroundColor: [
-                '#e91e63', // وردي
-                '#4caf50', // أخضر
-                '#2196f3', // أزرق
-                '#ff9800'  // برتقالي
-            ],
             borderWidth: 1
         }]
     },

@@ -28,7 +28,7 @@ if(isset($_POST['login'])){
 </head>
 <body>
     <div class="login-box">
-        <h2>Entrée de l'administration🔒</h2>
+        <h2>Entrée de l'administration</h2>
         <?php if(isset($error)) echo "<p style='color:red'>$error</p>"; ?>
         <form method="POST">
             <input type="text" name="user" placeholder="nom de l'utilisateur" required>

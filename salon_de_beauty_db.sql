@@ -41,13 +41,14 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`id`, `nom`, `telephone`, `service`, `date_rdv`, `heure`) VALUES
-(1, 'malaklatreche', '098765434567', 'Maquillage', '2025-12-14', '23:35:00'),
-(2, 'amanii', '234567890', 'Soins', '2025-12-27', '00:29:00'),
-(3, 'amanii', '234567890', 'Soins', '2025-12-27', '00:29:00'),
-(4, 'sdftzuiokjh', '3456789876', 'Coiffure', '2025-12-22', '00:32:00'),
-(5, 'mayar', '2345678987', 'Maquillage', '2025-12-24', '01:05:00'),
-(6, 'sara', '2345678890', 'Maquillage', '2025-12-24', '01:25:00'),
-(7, 'yasmmine', '34567898765', 'Maquillage', '2025-12-25', '12:51:00');
+(1, 'sara', '0612345687', 'Brushing', '2026-01-10', '10:00:00'),
+(2, 'malak', '0711223344', 'Maquillage soirée', '2026-01-11', '18:00:00'),
+(3, 'amina', '0556677889', 'Soin visage', '2026-01-12', '14:30:00'),
+(4, 'farah', '0718445258', 'Maquillage simple', '2026-01-11', '09:30:00'),
+(5, 'douaa', '0788551246', 'Masque hydratant', '2026-01-14', '11:00:00'),
+(8, 'sara', '0612345687', 'Brushing', '2026-01-07', '18:28:00'),
+(9, 'nihel', '0612345687', 'Maquillage soirée', '2026-01-08', '10:00:00'),
+(10, 'sirine', '0633223232', 'Maquillage soirée', '2026-01-12', '14:00:00');
 
 
 
